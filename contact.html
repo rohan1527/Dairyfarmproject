@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER FOR RESIDENTIAL TRAINING</title>
+    <link rel="stylesheet" href="styleno2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="short cut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <section class="RESIDENTIAL">
+
+        <div class="container">
+            <span class="big-circle"></span>
+            <div class="form">
+              <div class="contact-info">
+                <h3 class="title">REGISTER FOR RESIDENTIAL TRAINING ON DAIRY MANAGEMENT</h3>
+                <p class="text">
+                    India's one of best training center on dairy management
+                </p>
+      
+                <div class="info">
+                  <div class="information">
+                    <p>Creamy Acres Dairy Farm, Kadegaon, Tal: Kadegaon, Dist: Sangli, Maharashtra, India</p>
+                  </div>
+                  
+                  <div class="information">
+                    <a href="https://wa.me/919960132389"> <i class="fa-brands fa-whatsapp"></i></a>
+                     <p>chat with us</p>
+                   </div>
+                </div>
+      
+                <div class="social-media">
+                  <p>Connect with us :</p>
+                  <div class="social-icons">
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+      
+                <form action="index.html" autocomplete="off">
+                  <h3 class="title">Contact us</h3>
+                  <div class="input-container">
+                    <input type="text" name="name" class="input" />
+                    <label for="">Username</label>
+                    <span>Username</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="email" name="email" class="input" />
+                    <label for="">Email</label>
+                    <span>Email</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="tel" name="phone" class="input" />
+                    <label for="">Phone</label>
+                    <span>Phone</span>
+                  </div>
+                  <div class="input-container textarea">
+                    <textarea name="message" class="input"></textarea>
+                    <label for="">Message</label>
+                    <span>Message</span>
+                  </div>
+                  <input type="submit" value="Send" class="btn" />
+                </form>
+              </div>
+            </div>
+          </div>
+
+    </section>
+   
+</body>
+  
+    <script>
+        const inputs = document.querySelectorAll(".input");
+
+        function focusFunc() {
+            let parent = this.parentNode;
+            parent.classList.add("focus");
+        }
+
+        function blurFunc() {
+            let parent = this.parentNode;
+            if (this.value == "") {
+            parent.classList.remove("focus");
+            }
+        }
+
+        inputs.forEach((input) => {
+            input.addEventListener("focus", focusFunc);
+            input.addEventListener("blur", blurFunc);
+        });
+    </script>
+
+</html>
